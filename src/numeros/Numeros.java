@@ -28,9 +28,9 @@ public class Numeros {
         
         respuesta = Triangular(x);
         if(respuesta){
-            System.out.print("El número es triangular");
+            System.out.println("El número es triangular");
         }else{
-            System.out.print("El número no es triangular");
+            System.out.println("El número no es triangular");
         }
 
     }
