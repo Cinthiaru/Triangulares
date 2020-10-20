@@ -18,20 +18,36 @@ public class Numeros {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int x, y;
+        int x=1;
         boolean respuesta;
 
         Scanner teclado = new Scanner(System.in);
-
-        System.out.print("Introduzca el número: ");
-        x = teclado.nextInt();
+        System.out.println("-----Números Triangulares----");
         
-        respuesta = Triangular(x);
-        if(respuesta){
-            System.out.println("El número es triangular");
-        }else{
-            System.out.println("El número no es triangular");
-        }
+        while(x!=0){
+            
+            System.out.println("Para calcular un número triangular ingrese un número mayor o igual a 1");
+            
+            System.out.println("Presione 0 para salir");
+            System.out.print("Introduzca el número: ");
+           
+            x = teclado.nextInt();
+            
+            if(x==0){
+                return;
+            }
+            
+            respuesta = Triangular(x);
+            
+            if(respuesta){
+                System.out.println("El número es triangular");
+                System.out.println("------------------------");
+            }else{
+                System.out.println("El número no es triangular");
+                System.out.println("------------------------");
+            }
+        };
+        
 
     }
     
