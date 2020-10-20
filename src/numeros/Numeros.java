@@ -53,7 +53,7 @@ public class Numeros {
     
     public static boolean Triangular(int x){
         int resultado=0;
-        for(int j=0; j<=x; j++ ){
+        for(int j=1; j<=x; j++ ){
             resultado= resultado+j;
             if (resultado ==x){
                 return true;
